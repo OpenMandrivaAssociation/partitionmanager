@@ -1,4 +1,4 @@
-%define betaver BETA1a
+%define betaver BETA2
 
 Summary:	KDE Partition Manager
 Name:		partitionmanager
@@ -22,13 +22,16 @@ Create, resize, move, copy, back up, restore or delete partitions.
 %defattr(-,root,root)
 %_kde_bindir/*
 %_kde_libdir/*.so
+%_kde_libdir/kde4/*.so
+%_kde_iconsdir/hicolor/*/*/*
+%_kde_services/*.desktop
 %_kde_datadir/applications/kde4/*.desktop
 %_kde_appsdir/%name
 
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n %name-%version-BETA1
+%setup -q -n %name-%version-%betaver
 
 %build
 %cmake_kde4
