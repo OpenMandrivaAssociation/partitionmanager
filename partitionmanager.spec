@@ -1,4 +1,4 @@
-%define betaver BETA2
+%define betaver BETA3
 
 Summary:	KDE Partition Manager
 Name:		partitionmanager
