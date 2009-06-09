@@ -3,7 +3,7 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
 Version: 	1.0.0
-Release: 	%mkrel -c %betaver 1
+Release: 	%mkrel -c %betaver 2
 Source0: 	http://downloads.sourceforge.net/partitionman/%name-%version-%betaver.tar.bz2
 License: 	GPLv2+
 Group: 		System/Kernel and hardware
@@ -11,7 +11,7 @@ Url: 		http://sourceforge.net/projects/partitionman/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdelibs4-devel
 BuildRequires:	parted-devel
-BuildRequires:	e2fsprogs-devel
+BuildRequires:	libblkid-devel
 BuildRequires:	doxygen
 
 %description 
