@@ -1,9 +1,9 @@
-%define betaver BETA3
+%define betaver RC1
 
 Summary:	KDE Partition Manager
 Name:		partitionmanager
 Version: 	1.0.0
-Release: 	%mkrel -c %betaver 3
+Release: 	%mkrel -c %betaver 1
 Source0: 	http://downloads.sourceforge.net/partitionman/%name-%version-%betaver.tar.bz2
 License: 	GPLv2+
 Group: 		System/Kernel and hardware
