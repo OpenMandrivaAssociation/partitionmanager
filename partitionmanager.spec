@@ -1,10 +1,8 @@
-%define betaver RC1
-
 Summary:	KDE Partition Manager
 Name:		partitionmanager
 Version: 	1.0.0
-Release: 	%mkrel -c %betaver 1
-Source0: 	http://downloads.sourceforge.net/partitionman/%name-%version-%betaver.tar.bz2
+Release: 	%mkrel 1
+Source0: 	http://downloads.sourceforge.net/partitionman/%name-%version.tar.bz2
 License: 	GPLv2+
 Group: 		System/Kernel and hardware
 Url: 		http://sourceforge.net/projects/partitionman/
@@ -31,7 +29,7 @@ Create, resize, move, copy, back up, restore or delete partitions.
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n %name-%version-%betaver
+%setup -q -n %name-%version
 
 %build
 %cmake_kde4
