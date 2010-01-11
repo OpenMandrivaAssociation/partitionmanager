@@ -20,9 +20,7 @@ Create, resize, move, copy, back up, restore or delete partitions.
 %defattr(-,root,root)
 %_kde_bindir/*
 %_kde_libdir/*.so
-%_kde_libdir/kde4/*.so
 %_kde_iconsdir/hicolor/*/*/*
-%_kde_services/*.desktop
 %_kde_datadir/applications/kde4/*.desktop
 %_kde_appsdir/%name
 
