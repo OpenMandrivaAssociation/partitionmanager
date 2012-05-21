@@ -29,9 +29,7 @@ Create, resize, move, copy, back up, restore or delete partitions.
 %install
 %{makeinstall_std} -C build
 
-%find_lang %{name} --with-html
-
-%files -f %{name}.lang
+%files
 %_kde_bindir/*
 %_kde_libdir/*.so
 %_kde_libdir/kde4/*.so
