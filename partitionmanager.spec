@@ -18,7 +18,7 @@ Easily manage disks, partitions and file systems on your KDE Desktop:
 Create, resize, move, copy, back up, restore or delete partitions.
 
 %prep
-%setup -qn %{name}
+%setup -q
 %apply_patches
 
 %build
