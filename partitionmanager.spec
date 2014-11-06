@@ -28,12 +28,15 @@ Create, resize, move, copy, back up, restore or delete partitions.
 %install
 %{makeinstall_std} -C build
 
-%files
+%find_lang %{name} --with-kde --all-name --with-html
+
+%files -f %{name}.lang
 %_kde_bindir/*
 %_kde_libdir/*.so
 %_kde_libdir/kde4/*.so
 %_kde_iconsdir/hicolor/*/*/*
 %_kde_datadir/applications/kde4/*.desktop
+%_datadir/appdata/%{name}.appdata.xml
 %_kde_appsdir/%{name}
 %_kde_services/*.desktop
 %_kde_servicetypes/*.desktop
