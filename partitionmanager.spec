@@ -8,6 +8,7 @@ Url:		http://sourceforge.net/projects/partitionman/
 Source0:	http://download.kde.org/stable/partitionmanager/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(blkid)
 BuildRequires:	pkgconfig(libatasmart)
+BuildRequires:	pkgconfig(libparted)
 BuildRequires:	cmake >= 3.0
 BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core) >= 5.3.0
