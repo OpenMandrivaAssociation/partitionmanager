@@ -61,4 +61,4 @@ partitions, and file systems.
 %{_datadir}/kservices5/pmdummybackendplugin.desktop
 %{_datadir}/kservices5/pmlibpartedbackendplugin.desktop
 %{_datadir}/kservicetypes5/pmcorebackendplugin.desktop
-%{_datadir}/%{name}/%{name}.rc
+%{_datadir}/%{name}/%{name}*.rc
