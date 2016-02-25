@@ -38,7 +38,7 @@ partitions, and file systems.
 %prep
 %setup -q
 %apply_patches
-%cmake_qt5
+%cmake_kde5
 
 %build
 %ninja -C build
