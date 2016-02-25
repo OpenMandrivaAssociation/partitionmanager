@@ -38,10 +38,10 @@ partitions, and file systems.
 %prep
 %setup -q
 %apply_patches
+%cmake_qt5
 
 %build
-%cmake_qt5
-%ninja
+%ninja -C build
 
 %install
 %ninja_install -C build
