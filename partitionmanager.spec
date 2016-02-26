@@ -51,15 +51,8 @@ partitions, and file systems.
 %files -f %{name}.lang
 %doc README TODO CHANGES
 %{_bindir}/%{name}
-%{_libdir}/lib%{name}fatlabel.so
-%{_libdir}/lib%{name}private.so
-%{_libdir}/qt5/plugins/libpmdummybackendplugin.so
-%{_libdir}/qt5/plugins/libpmlibpartedbackendplugin.so
 %{_datadir}/appdata/org.kde.PartitionManager.appdata.xml
 %{_datadir}/applications/org.kde.PartitionManager.desktop
-%{_datadir}/config.kcfg/config.kcfg
+%{_datadir}/config.kcfg/partitionmanager.kcfg
+%{_datadir}/kxmlgui5/partitionmanager/partitionmanagerui.rc
 %{_iconsdir}/hicolor/scalable/apps/partitionmanager.svg
-%{_datadir}/kservices5/pmdummybackendplugin.desktop
-%{_datadir}/kservices5/pmlibpartedbackendplugin.desktop
-%{_datadir}/kservicetypes5/pmcorebackendplugin.desktop
-%{_datadir}/%{name}/%{name}*.rc
