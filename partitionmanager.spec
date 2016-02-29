@@ -1,11 +1,11 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	2.0.2
+Version:	2.0.3
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
-Source0:	http://download.kde.org/stable/partitionmanager/%{version}/src/%{name}-%{version}.tar.gz
+Source0:	http://download.kde.org/stable/partitionmanager/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(blkid)
 BuildRequires:	pkgconfig(libatasmart)
 BuildRequires:	cmake(ECM)
