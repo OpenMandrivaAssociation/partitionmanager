@@ -1,6 +1,6 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	2.0.3
+Version:	2.1.0
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
@@ -12,7 +12,7 @@ BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core) >= 5.3.0
 BuildRequires:	pkgconfig(Qt5Gui) >= 5.3.0
 BuildRequires:	pkgconfig(Qt5Widgets) >= 5.3.0
-BuildRequires:	cmake(KPMcore)
+BuildRequires:	cmake(KPMcore) >= 2.1.0
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5Crash)
 BuildRequires:	cmake(KF5DocTools)
