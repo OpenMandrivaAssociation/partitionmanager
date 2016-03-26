@@ -1,7 +1,7 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
 Version:	2.1.0
-Release:	2
+Release:	3
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
