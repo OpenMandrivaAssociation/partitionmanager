@@ -1,12 +1,11 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	2.1.0
-Release:	4
+Version:	2.2.0
+Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
 Source0:	http://download.kde.org/stable/partitionmanager/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		partitionmanager-2.1.0-default-to-ext4.patch
 BuildRequires:	pkgconfig(blkid)
 BuildRequires:	pkgconfig(libatasmart)
 BuildRequires:	cmake(ECM)
@@ -34,7 +33,6 @@ partitions, and file systems.
 
 %prep
 %setup -q
-%apply_patches
 %cmake_kde5
 
 %build
