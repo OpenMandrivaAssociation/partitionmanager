@@ -48,7 +48,7 @@ partitions, and file systems.
 %find_lang %{name} --with-html
 
 %files -f %{name}.lang
-%doc RADME.md
+%doc README.md
 %{_bindir}/%{name}
 %{_datadir}/appdata/org.kde.PartitionManager.appdata.xml
 %{_datadir}/applications/org.kde.PartitionManager.desktop
