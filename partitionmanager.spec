@@ -1,14 +1,14 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	2.2.0
-Release:	3
+Version:	2.2.1
+Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
 Source0:	http://download.kde.org/stable/partitionmanager/%{version}/src/%{name}-%{version}.tar.xz
 # incorrectly treats a non-empty error message
 # as indication that the support tools cannot be found
-Patch1:		partitionmanager-2.2.0-fix_empty_error_message.patch
+#Patch1:		partitionmanager-2.2.0-fix_empty_error_message.patch
 BuildRequires:	pkgconfig(blkid)
 BuildRequires:	pkgconfig(libatasmart)
 BuildRequires:	cmake(ECM)
@@ -28,7 +28,7 @@ BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5WidgetsAddons)
 # (tpg) this requires all the filesystem tools needed to manipulate filesystems
-Requires:	kpmcore >= 2.1.0-2
+Requires:	kpmcore >= 2.2.1
 
 %description
 A KDE utility that allows you to manage disks,
