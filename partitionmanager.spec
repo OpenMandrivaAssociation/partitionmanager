@@ -50,7 +50,7 @@ partitions, and file systems.
 %files -f %{name}.lang
 %doc README.md
 %{_bindir}/%{name}
-%{_datadir}/appdata/org.kde.PartitionManager.appdata.xml
+%{_datadir}/metainfo/org.kde.PartitionManager.appdata.xml
 %{_datadir}/applications/org.kde.PartitionManager.desktop
 %{_datadir}/config.kcfg/partitionmanager.kcfg
 %{_datadir}/kxmlgui5/partitionmanager/partitionmanagerui.rc
