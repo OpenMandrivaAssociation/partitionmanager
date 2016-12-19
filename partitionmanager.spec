@@ -1,6 +1,6 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	2.2.1
+Version:	3.0.0
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
@@ -28,7 +28,7 @@ BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5WidgetsAddons)
 # (tpg) this requires all the filesystem tools needed to manipulate filesystems
-Requires:	kpmcore >= 2.2.1
+Requires:	kpmcore >= 3.0.0
 
 %description
 A KDE utility that allows you to manage disks,
@@ -50,7 +50,7 @@ partitions, and file systems.
 %files -f %{name}.lang
 %doc README.md
 %{_bindir}/%{name}
-%{_datadir}/appdata/org.kde.PartitionManager.appdata.xml
+%{_datadir}/metainfo/org.kde.PartitionManager.appdata.xml
 %{_datadir}/applications/org.kde.PartitionManager.desktop
 %{_datadir}/config.kcfg/partitionmanager.kcfg
 %{_datadir}/kxmlgui5/partitionmanager/partitionmanagerui.rc
