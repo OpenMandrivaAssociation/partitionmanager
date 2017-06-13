@@ -1,7 +1,7 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
 Version:	3.0.1
-Release:	1
+Release:	2
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
@@ -15,7 +15,7 @@ BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(Qt5Core) >= 5.3.0
 BuildRequires:	pkgconfig(Qt5Gui) >= 5.3.0
 BuildRequires:	pkgconfig(Qt5Widgets) >= 5.3.0
-BuildRequires:	cmake(KPMcore) >= 3.0.0
+BuildRequires:	cmake(KPMcore) >= 3.1.0
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5Crash)
 BuildRequires:	cmake(KF5DocTools)
@@ -28,7 +28,7 @@ BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5WidgetsAddons)
 # (tpg) this requires all the filesystem tools needed to manipulate filesystems
-Requires:	kpmcore >= 3.0.0
+Requires:	kpmcore >= 3.1.0
 
 %description
 A KDE utility that allows you to manage disks,
