@@ -1,6 +1,6 @@
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	3.1.0
+Version:	3.1.2
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
