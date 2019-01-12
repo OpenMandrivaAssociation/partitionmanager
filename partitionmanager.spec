@@ -27,6 +27,7 @@ BuildRequires:	cmake(KF5Service)
 BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5DBusAddons)
 # (tpg) this requires all the filesystem tools needed to manipulate filesystems
 Requires:	kpmcore >= 3.1.0
 
