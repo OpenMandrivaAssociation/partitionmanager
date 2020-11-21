@@ -1,11 +1,13 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	4.2.0
+Version:	20.11.80
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
-Source0:	http://download.kde.org/stable/partitionmanager/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 # incorrectly treats a non-empty error message
 # as indication that the support tools cannot be found
 #Patch1:		partitionmanager-2.2.0-fix_empty_error_message.patch
