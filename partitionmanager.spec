@@ -2,7 +2,7 @@
 
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	21.03.80
+Version:	21.03.90
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
