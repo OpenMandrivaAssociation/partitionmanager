@@ -30,7 +30,7 @@ BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5DBusAddons)
-BuildRequires:  cmake(polkit-qt5-1)
+BuildRequires:  pkgconfig(libpolkit-qt5-core)
 
 # (tpg) this requires all the filesystem tools needed to manipulate filesystems
 Requires:	kpmcore >= 4.2.0
