@@ -1,15 +1,17 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
-#define git 20231126
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Summary:	KDE Partition Manager
 Name:		plasma6-partitionmanager
-Version:	24.01.95
+Version:	24.01.96
 Release:	%{?git:0.%{git}.}1
 License:	GPLv3
 Group:		System/Kernel and hardware
 Url:		http://sourceforge.net/projects/partitionman/
 %if 0%{?git:1}
-Source0:	https://invent.kde.org/utilities/partitionmanager/-/archive/master/partitionmanager-master.tar.bz2#/partitionmanager-%{git}.tar.bz2
+Source0:	https://invent.kde.org/system/partitionmanager/-/archive/%{gitbranch}/partitionmanager-%{gitbranchd}.tar.bz2#/partitionmanager-%{git}.tar.bz2
 %else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/partitionmanager-%{version}.tar.xz
 %endif
@@ -45,7 +47,7 @@ A KDE utility that allows you to manage disks,
 partitions, and file systems.
 
 %prep
-%autosetup -p1 -n partitionmanager-%{!?git:%{version}}%{?git:master}
+%autosetup -p1 -n partitionmanager-%{!?git:%{version}}%{?git:%{gitbranchd}}
 %cmake \
 	-DBUILD_WITH_QT6:BOOL=ON \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
