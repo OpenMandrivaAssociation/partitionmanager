@@ -5,7 +5,7 @@
 
 Summary:	KDE Partition Manager
 Name:		plasma6-partitionmanager
-Version:	24.02.1
+Version:	24.02.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv3
 Group:		System/Kernel and hardware
