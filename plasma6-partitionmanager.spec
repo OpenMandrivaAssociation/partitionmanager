@@ -9,7 +9,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv3
 Group:		System/Kernel and hardware
-Url:		http://sourceforge.net/projects/partitionman/
+Url:		https://sourceforge.net/projects/partitionman/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/system/partitionmanager/-/archive/%{gitbranch}/partitionmanager-%{gitbranchd}.tar.bz2#/partitionmanager-%{git}.tar.bz2
 %else
