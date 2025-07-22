@@ -5,7 +5,7 @@
 
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv3
 Group:		System/Kernel and hardware
@@ -40,28 +40,18 @@ BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:  pkgconfig(polkit-qt6-1)
 
 # (tpg) this requires all the filesystem tools needed to manipulate filesystems
-Requires:	plasma6-kpmcore
+Requires:	kpmcore >= 6.0
+
+%rename plasma6-partitionmanager
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 A KDE utility that allows you to manage disks,
 partitions, and file systems.
 
-%prep
-%autosetup -p1 -n partitionmanager-%{!?git:%{version}}%{?git:%{gitbranchd}}
-%cmake \
-	-DBUILD_WITH_QT6:BOOL=ON \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-
-%find_lang partitionmanager --with-html
-
-%files -f partitionmanager.lang
+%files -f %{name}.lang
 %doc README.md
 %{_bindir}/partitionmanager
 %{_datadir}/applications/org.*.desktop
