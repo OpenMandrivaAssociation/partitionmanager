@@ -5,7 +5,7 @@
 
 Summary:	KDE Partition Manager
 Name:		partitionmanager
-Version:	25.04.3
+Version:	25.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv3
 Group:		System/Kernel and hardware
